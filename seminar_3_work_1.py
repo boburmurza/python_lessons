@@ -8,14 +8,14 @@
 #     1 2 3 4 5
 #     3
 #     -> 1
-def list_items(list_, x):
-    count = 0
-    for i in range(len(list_)):
-        if i == x:
-            count += 1
-    print(count)
+def list_items(value):
+    list_ = []
+    for i in range(value):
+        a  = int(input(':'))
+        list_.append(a)
+    X = int(input('введите значине  Х = '))
+    print(list_.count(X))
 
 
-number = list(input("введите значине списка : ").split())
-X = int(input('введите значине  Х = '))
-list_items(number, X)
+number = int(input("введите размер  списка : "))
+list_items(number)
